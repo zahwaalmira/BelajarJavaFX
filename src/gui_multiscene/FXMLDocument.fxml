@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="gui_multiscene.FXMLDocumentController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="600.0" prefWidth="800.0">
+         <left>
+            <VBox prefHeight="600.0" prefWidth="265.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleButtonHalamanDataPengguna" prefHeight="45.0" prefWidth="275.0" text="Data Calon Pendonor">
+                     <VBox.margin>
+                        <Insets top="150.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleButtonHalamanStatistik" prefHeight="45.0" prefWidth="275.0" text="Statistik">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleButtonHalamanKelolaData" prefHeight="45.0" prefWidth="275.0" text="Kelola Data">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleButtonHalamanCariData" prefHeight="45.0" prefWidth="275.0" text="Cari Data">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleButtonHalamanKonfirmasi" prefHeight="45.0" prefWidth="275.0" text="Konfirmasi Permintaan">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Klik menu di sebelah kiri" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Narrow Bold" size="48.0" />
+               </font>
+            </TextArea>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
